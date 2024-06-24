@@ -8,5 +8,5 @@ ADD https://github.com/lune-org/lune/releases/download/v0.8.6/lune-0.8.6-linux-x
 RUN unzip lune-0.8.6-linux-x86_64.zip
 COPY . .
 RUN git init
-RUN git submodule update --init
+RUN git submodule update --recursive --init
 CMD ["./lune", "run", "src/server.luau"]
