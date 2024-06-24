@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-RUN mkdir /home
 WORKDIR /home
 RUN apt-get update
 RUN apt-get install -y unzip git
