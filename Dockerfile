@@ -9,7 +9,6 @@ RUN unzip lune-0.8.6-linux-x86_64.zip
 COPY . .
 RUN git init
 RUN git remote add origin https://github.com/memorycode/mem.dev
-RUN git checkout main
-RUN git pull --recurse-submodules
+RUN git pull origin main --recurse-submodules
 RUN git submodule update --recursive --init
 CMD ["./lune", "run", "src/server.luau"]
