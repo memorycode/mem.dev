@@ -1,6 +1,6 @@
 local fs = require("@lune/fs")
 
-for _, file in fs.readDir("./") do
+for _, file in fs.readDir("./lynx") do
 	print(file)
 end
 
